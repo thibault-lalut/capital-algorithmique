@@ -882,17 +882,6 @@
             box-shadow: 0 0 0 2px #c69214;
         }
         
-        /* Flèche de connexion entre items 3 et 4 */
-        .timeline-item:nth-child(3)::after {
-            content: '↓';
-            position: absolute;
-            left: 22.5%;
-            bottom: -60px;
-            font-size: 3em;
-            color: #c69214;
-            font-weight: bold;
-            z-index: 10;
-        }
         
         .timeline-content h4 {
             font-size: 1.3em;
@@ -1152,15 +1141,8 @@
             
             .timeline-dot {
                 left: 30px;
-            }
             
-            /* Ajuster la flèche pour mobile */
-            .timeline-item:nth-child(4)::after {
-                right: auto;
-                left: 20px;
-                top: -30px;
             }
-        }
         
         @media (max-width: 768px) {
             .container {
