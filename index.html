@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0064)file:///C:/Users/Thibault/Downloads/capital-algorithmique_5.html -->
+<!-- saved from url=(0048)file:///C:/Users/Thibault/Downloads/index_7.html -->
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -483,6 +483,84 @@
         }
         
         /* Diagramme Venn pour distinctions conceptuelles */
+        /* Section Apports originaux */
+        .apports-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .apport-card {
+            background: white;
+            padding: 40px;
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+            border-top: 4px solid #c69214;
+            transition: all 0.3s ease;
+        }
+        
+        .apport-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            border-top-width: 6px;
+        }
+        
+        .apport-icon {
+            width: 60px;
+            height: 60px;
+            background: #fafafa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        
+        .apport-icon svg {
+            width: 35px;
+            height: 35px;
+        }
+        
+        .apport-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .apport-card > p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        
+        .apport-details {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        
+        .detail-item .arrow {
+            color: #c69214;
+            font-weight: bold;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .detail-item span:last-child {
+            line-height: 1.6;
+        }
+        
         .venn-container {
             background: white;
             padding: 50px;
@@ -1101,7 +1179,7 @@
         }
         
         @media (max-width: 968px) {
-            .stats-grid, .elites-visual, .venn-diagram {
+            .stats-grid, .elites-visual, .venn-diagram, .apports-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -1197,13 +1275,12 @@
 </head>
 <body>
     <div class="share-buttons">
-        <a href="file:///C:/Users/Thibault/Downloads/capital-algorithmique_5.html#" class="share-btn" onclick="shareOnTwitter(); return false;" title="Partager sur Twitter">𝕏</a>
-        <a href="file:///C:/Users/Thibault/Downloads/capital-algorithmique_5.html#" class="share-btn" onclick="shareOnLinkedIn(); return false;" title="Partager sur LinkedIn">
+        <a href="file:///C:/Users/Thibault/Downloads/index_7.html#" class="share-btn" onclick="shareOnLinkedIn(); return false;" title="Partager sur LinkedIn">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
             </svg>
         </a>
-        <a href="file:///C:/Users/Thibault/Downloads/capital-algorithmique_5.html#" class="share-btn" onclick="copyLink(); return false;" title="Copier le lien">🔗</a>
+        <a href="file:///C:/Users/Thibault/Downloads/index_7.html#" class="share-btn" onclick="copyLink(); return false;" title="Copier le lien">🔗</a>
     </div>
 
     <div class="container">
@@ -1221,7 +1298,7 @@
             <p class="hook-text">
                 Qui détient réellement le pouvoir dans un État qui automatise ses décisions ? Alors que <strong>Parcoursup</strong> 
                 trie des lycéens, que la <strong>CAF</strong> profile ses allocataires et que <strong>FranceConnect</strong> 
-                centralise nos identités numériques, une nouvelle élite émerge dans l'ombre.
+                centralise nos identités numériques, une nouvelle élite émerge.
             </p>
             
             <p class="hook-text">
@@ -1255,11 +1332,11 @@
         </div>
 
         <section id="cartographie">
-            <h2 class="section-title">Recomposition des élites administratives</h2>
+            <h2 class="section-title">Hypothèse : une recomposition des élites administratives</h2>
             
             <div class="elites-map">
                 <p style="font-size: 1.1em; color: #666; text-align: center; margin-bottom: 40px;">
-                    Trois configurations idéal-typiques structurent désormais le champ bureaucratique numérisé
+                    Trois configurations idéal-typiques pourraient structurer le champ bureaucratique numérisé
                 </p>
                 
                 <div class="elites-visual">
@@ -1380,8 +1457,8 @@
             <div class="card" style="margin-top: 40px;">
                 <h3>L'hypothèse centrale</h3>
                 <p>Lorsque les décisions publiques s'automatisent, le pouvoir se concentre entre les mains de ceux qui maîtrisent 
-                la conception, le paramétrage et l'audit des systèmes algorithmiques. Cette expertise inédite — que nous nommons 
-                <strong>capital algorithmique</strong> — ne s'acquiert plus dans les facultés de droit mais à travers la manipulation 
+                la conception, le paramétrage et l'audit des systèmes algorithmiques. Cette expertise inédite (que nous nommons 
+                <strong>capital algorithmique</strong>) ne s'acquiert plus dans les facultés de droit mais à travers la manipulation 
                 de données massives, l'élaboration de modèles prédictifs et la gouvernance d'infrastructures computationnelles complexes.</p>
                 
                 <p>L'enjeu n'est donc pas seulement technique : c'est une <strong>recomposition profonde des hiérarchies administratives</strong> 
@@ -1414,7 +1491,7 @@
                 <div class="dimension-card">
                     <div class="dimension-number">3</div>
                     <h4>Symbolique</h4>
-                    <p>Capacité à incarner l'"État moderne" et à monopoliser le discours légitime sur l'innovation publique. 
+                    <p>Capacité à incarner l'État moderne et à monopoliser le discours légitime sur l'innovation publique. 
                     Légitimité symbolique de la modernité technique conférant une autorité morale et cognitive.</p>
                 </div>
             </div>
@@ -1532,30 +1609,68 @@
             </div>
         </section>
 
-        <section id="contributions">
+        <section id="apports">
             <h2 class="section-title">Apports originaux</h2>
             
-            <div class="card">
-                <h3>Déplacement conceptuel</h3>
-                <p>Premier cadre systématique appliquant le capital algorithmique à l'analyse des élites administratives : 
-                une ressource qui s'accumule, se convertit et structure des hiérarchies organisationnelles au sein de l'État numérisé.</p>
+            <div class="apports-grid">
+                <div class="apport-card">
+                    <div class="apport-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#c69214" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <path d="M12 11v6"></path>
+                            <path d="M9 14l3 3 3-3"></path>
+                        </svg>
+                    </div>
+                    <h3>De la plateforme au champ bureaucratique</h3>
+                    <p>Premier cadre transposant le capital algorithmique à l'étude des élites administratives.</p>
+                    <div class="apport-details">
+                        <div class="detail-item">
+                            <span class="arrow">→</span>
+                            <span>Des infrastructures commerciales vers l'appareil d'État</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="arrow">→</span>
+                            <span>Du pouvoir techno-économique aux hiérarchies bureaucratiques</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="arrow">→</span>
+                            <span>De l'analyse macro-systémique à l'objectivation de champ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="apport-card">
+                    <div class="apport-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#c69214" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <h3>L'ICCA comme outil d'objectivation</h3>
+                    <p>Proposition d'un Indice Composite de Capital Algorithmique pour cartographier empiriquement cette ressource au sein de l'administration française.</p>
+                    <div class="apport-details">
+                        <div class="detail-item">
+                            <span class="arrow">→</span>
+                            <span>Indicateurs cognitifs, relationnels et symboliques</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="arrow">→</span>
+                            <span>Méthodologie quantitative rigoureuse</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="arrow">→</span>
+                            <span>Validation empirique dans une recherche doctorale</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="card">
-                <h3>Typologie des configurations élitaires</h3>
-                <p style="margin-bottom: 25px;">Trois profils idéal-typiques structurent désormais le champ bureaucratique :</p>
-                <ul>
-                    <li><strong>Élite juridico-administrative traditionnelle</strong> : forte légitimité institutionnelle mais démunie 
-                    techniquement, son autorité cognitive se fragilise dans les arbitrages numériques</li>
-                    <li><strong>Élite technique pure</strong> : expertise algorithmique pointue mais faible ancrage bureaucratique, 
-                    elle peine à traduire ses compétences en influence organisationnelle durable</li>
-                    <li><strong>Élite hybride</strong> : cumul stratégique des ressources techniques et institutionnelles, 
-                    cette configuration émerge comme position dominante dans l'appareil d'État algorithmique</li>
-                </ul>
-            </div>
+        </section>
+
+        <section id="distinctions">
+            <h2 class="section-title">Distinctions conceptuelles rigoureuses</h2>
             
             <div class="venn-container">
-                <h3 style="text-align: center; margin-bottom: 30px; font-size: 1.5em;">Distinctions conceptuelles rigoureuses</h3>
                 <div class="venn-diagram">
                     <div class="concept-circle">
                         <h5>Capital de données</h5>
@@ -1715,14 +1830,8 @@
         </footer>
     </div>
 
-    <script data-cfasync="false" src="file:///C:/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        const PAGE_URL = window.location.href;
-        
-        function shareOnTwitter() {
-            const text = "Le capital algorithmique dans l'État numérisé : qui détient réellement le pouvoir dans une administration qui automatise ses décisions ? Working paper par Thibault Lalut";
-            window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(PAGE_URL) + '&text=' + encodeURIComponent(text), '_blank');
-            return false;
-        }
+    <script data-cfasync="false" src="file:///C:/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="file:///C:/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        const PAGE_URL = 'https://thibault-lalut.github.io/capital-algorithmique/';
         
         function shareOnLinkedIn() {
             window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(PAGE_URL), '_blank');
@@ -1786,9 +1895,4 @@
         
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && href !== 'javascript:void(0);') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-              </script></body></html>
+                const href = this.getAttribute('href</script></body></html>
